@@ -2,8 +2,8 @@
   <div>
     <footer id="footer" class="font-fuzzy bg-gray-1000">
       <div class="max-w-7xl mx-auto pt-4 px-4 overflow-hidden sm:px-6 lg:px-8 flex flex-col items-center md:text-lg">
-        <div class="relative pt-4 flex flex-col sd:gap-9">
-          <!-- insert the link of the facebook page with an icon  -->
+        <!-- insert the link of the facebook page with an icon  -->
+        <!-- <div class="relative pt-4 flex flex-col sd:gap-9">
           <a
             v-for="item in navigation.tacos"
             :key="item.name"
@@ -16,7 +16,7 @@
             <span class="sr-only">{{ item.name }}</span>
             <i :class="item.icon" class="h-6 w-6 text-blue-700 bg-white rounded-full" />
           </a>
-        </div>
+        </div> -->
         <!-- © zozoy -->
         <p class="text-center text-base text-orange-1000 md:text-lg pt-8 xl:pt-20">
           &copy; 2022 zozoy, Inc. All rights reserved.
@@ -46,13 +46,6 @@ export default {
   data () {
     return {
       navigation: {
-        tacos: [
-          {
-            name: 'Facebook',
-            href: 'https://www.facebook.com/people/Otantik-TACOS/100040555491473/',
-            icon: 'fab fa-facebook'
-          }
-        ],
         social: [
           {
             name: 'Github',
