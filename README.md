@@ -1,16 +1,16 @@
-# SliderNuxt2
-Welcome to my Personal component 👋
+# Stikhiar
+👋
 
-## What is it used for ?
-It is used to display several images in the form of a carousel, while being responsive.
+## What is ?
+texte
 
 ## Installation
 
 ```bash
 # clone the repo
-$ git clone https://github.com/zozo404/SliderNuxt2.git
+$ git clone https://github.com/zozo404/Stikhiar.git
 
-$ cd SliderNuxt2
+$ cd Stikhiar
 
 # install dependencies
 $ yarn install
