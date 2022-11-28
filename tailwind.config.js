@@ -25,6 +25,9 @@ module.exports = {
       },
       screens: {
         sd: '375px'
+      },
+      padding: {
+        btn: '0.35rem'
       }
     }
   },

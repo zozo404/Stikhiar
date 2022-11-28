@@ -27,7 +27,7 @@
           <a
             key="Index"
             :href="lien.lien"
-            class="text-base lg:text-xl 2xl:text-2xl font-medium text-white hover:text-black hover:bg-yellow-500 hover:rounded-full p-1 duration-100"
+            class="text-base lg:text-xl font-medium text-white hover:text-black hover:bg-yellow-500 hover:rounded-full p-btn duration-100"
             @click="toggle"
           >
             {{ lien.texte }}

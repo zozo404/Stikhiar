@@ -1,6 +1,7 @@
 export const state = () => ({
   carte: [],
-  pages: []
+  pages: [],
+  equipe: []
 })
 
 export const getters = {
@@ -9,6 +10,9 @@ export const getters = {
   },
   getPages (state) {
     return state.pages
+  },
+  getEquipe (state) {
+    return state.equipe
   }
 }
 
@@ -18,6 +22,9 @@ export const mutations = {
   },
   SET_PAGES (state, pages) {
     state.pages = pages
+  },
+  SET_EQUIPE (state, equipe) {
+    state.equipe = equipe
   }
 }
 
@@ -28,13 +35,19 @@ export const actions = {
 
     const pages = await $axios.$get('https://o4i5f3q7.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "Pages"]{name,"imageId":image{asset,alt},titre,text}')
 
+    const equipe = await $axios.$get('https://o4i5f3q7.api.sanity.io/v2021-03-25/data/query/production?query=*[_type == "equipe"]{name,"imageId":image{asset,alt},role}')
+
     await dispatch('setCarte', carte.result)
     await dispatch('setPages', pages.result)
+    await dispatch('setEquipe', equipe.result)
   },
   setCarte ({ commit }, carte) {
     commit('SET_CARTE', carte)
   },
   setPages ({ commit }, pages) {
     commit('SET_PAGES', pages)
+  },
+  setEquipe ({ commit }, equipe) {
+    commit('SET_EQUIPE', equipe)
   }
 }
