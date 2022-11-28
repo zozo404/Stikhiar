@@ -4,12 +4,12 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'otantik-tacos',
+    title: 'Stikhiar',
     htmlAttrs: {
       lang: 'fr'
     },
     bodyAttrs: {
-      class: 'bg-orange-1000 text-gray-25'
+      class: ''
     },
     meta: [
       { charset: 'utf-8' },

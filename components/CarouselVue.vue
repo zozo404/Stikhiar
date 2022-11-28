@@ -1,8 +1,6 @@
 <template>
   <div class="mt-8 w-full max-w-3xl lg:max-w-5xl center-carousel">
-    <h1 class="text-center text-2xl">
-      Nos cartes
-    </h1>
+    <Titles subtitle="Nos réalisations" class="scroll-mt-60 lg:scroll-mt-40" />
     <swiper class="swiper" :options="swiperOption">
       <swiper-slide class="lg:flex lg:justify-center">
         <nuxt-img
