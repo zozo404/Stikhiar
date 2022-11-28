@@ -1,7 +1,7 @@
 <template>
   <div>
-    <CarouselVue />
-    <Equipe :equipe="Equipe" />
+    <CarouselVue :id="'realisations'" class="scroll-mt-60 lg:scroll-mt-40" />
+    <Equipe :id="'equipe'" :equipe="Equipe" class="scroll-mt-60 lg:scroll-mt-40" />
     <RetrouvezNous :id="'retrouvez'" class="scroll-mt-60 lg:scroll-mt-40" />
   </div>
 </template>

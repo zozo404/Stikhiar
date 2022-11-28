@@ -89,12 +89,12 @@ export default {
           lien: '/#realisations'
         },
         {
-          texte: 'Retrouvez-nous',
-          lien: '/#retrouvez'
-        },
-        {
           texte: 'Notre équipe',
           lien: '/#equipe'
+        },
+        {
+          texte: 'Retrouvez-nous',
+          lien: '/#retrouvez'
         }
       ]
     }
