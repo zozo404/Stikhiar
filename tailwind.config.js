@@ -15,7 +15,8 @@ module.exports = {
         25: '0.45'
       },
       brightness: {
-        tacos: '0.4'
+        tacos: '0.4',
+        85: '0.85'
       },
       width: {
         95: '95%'

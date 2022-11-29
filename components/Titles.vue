@@ -1,7 +1,7 @@
 <template>
   <div :id="id" class="bg-transparent flex flex-col items-center mt-7">
     <div v-if="subtitle" class="flex w-3/4 justify-center items-center pb-8 bg-transparent rounded-full mb-4">
-      <p class="lg:w-full sm:text-4xl lg:text-4xl text-3xl text-center">
+      <p class="sm:text-4xl lg:text-4xl text-3xl text-center backdrop-blur-sm lg:w-auto">
         {{ subtitle }}
       </p>
     </div>

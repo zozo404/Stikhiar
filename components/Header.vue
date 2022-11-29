@@ -1,7 +1,7 @@
 <template>
   <header class=" h-24 w-full z-20 sticky top-0 font-fuzzy">
     <nav
-      class="lg:max-h-40 max-h-20 w-full py-4 bg-gray-1000 lg:py-6 grid grid-cols-2 grid-rows-1 lg:grid-cols-2 items-center justify-between lg:border-none"
+      class="lg:max-h-40 max-h-20 w-full py-4 backdrop-blur-sm border-b border-yellow-500 lg:py-6 grid grid-cols-2 grid-rows-1 lg:grid-cols-2 items-center justify-between"
       aria-label="Top"
     >
       <!-- logo -->
@@ -17,7 +17,7 @@
         />
       </nuxt-link>
       <div class="text-right pr-8 lg:hidden flex justify-end " @click="toggle">
-        <i class="fas fa-bars h-8 w-8 text-white hover:text-black hover:bg-yellow-500 duration-100" />
+        <i class="fas fa-bars h-8 w-8 text-white hover:text-yellow-500 duration-100" />
       </div>
       <!-- navigation -->
       <div
@@ -37,7 +37,7 @@
       <!-- fin nav fermée -->
     </nav>
     <!-- nav ouverte -->
-    <nav :class="{hidden:isActive}" class="lg:hidden w-screen absolute top-0 h-screen bg-gray-1000 z-40 grid grid-cols-2 grid-rows-6 ">
+    <nav :class="{hidden:isActive}" class="lg:hidden w-screen absolute top-0 h-screen backdrop-blur-sm bg-black/30 z-40 grid grid-cols-2 grid-rows-6 ">
       <div class="grid grid-cols-2 grid-rows-1 col-span-2  my-4 h-12 justify-items-center w-full">
         <!-- logo -->
         <nuxt-link to="/" class="flex justify-center lg:col-span-1 h-full ">

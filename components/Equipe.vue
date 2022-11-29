@@ -7,7 +7,7 @@
       <div
         v-for="team in equipe"
         :key="team._id"
-        class="flex flex-col items-center"
+        class="flex flex-col items-center backdrop-blur-sm gap-4"
       >
         <nuxt-img
           provider="sanity"
